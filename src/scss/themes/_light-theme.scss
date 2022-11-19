@@ -1,0 +1,18 @@
+.app-container.light-theme {
+  color: $light-text-color;
+  background-color: $light-background;
+  a:hover {
+    color: $light-text-color;
+  }
+
+  .app-content {
+    header {
+      background-color: $light-header-color;
+      .header-content {
+        a {
+          color: $light-text-color;
+        }
+      }
+    }
+  }
+}

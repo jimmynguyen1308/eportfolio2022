@@ -1,0 +1,21 @@
+.app-container.dark-theme {
+  color: $dark-text-color;
+  background-color: $dark-background;
+  a:hover {
+    color: $dark-text-color;
+  }
+
+  .app-content {
+    header {
+      background-color: $dark-header-color;
+      .header-content {
+        a {
+          color: $dark-text-color;
+          .svg-logo {
+            filter: $SVG_white;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+@import 'reset';
+@import 'typography';
+@import '../abstracts/variables';
+
+html {
+  font-family: 'Inter';
+  font-size: 18px;
+  p {
+    letter-spacing: 0.03rem;
+    line-height: 1.7;
+  }
+  .prevent-highlight {
+    -webkit-user-select: none;    /* Safari */
+    -moz-user-select: none;       /* Firefox */
+    -ms-user-select: none;        /* IE10+/Edge */
+    user-select: none;            /* Standard */
+  }
+}
+
+.app-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  min-height: 130vh;      // fixed height
+
+  a {
+    text-decoration: none;
+    color: $orange;
+    &:hover {
+      text-decoration: underline;
+      transition: 0.2s;
+    }
+  }
+}
