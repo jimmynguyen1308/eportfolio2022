@@ -1,11 +1,11 @@
 interface SVGLogoProps {
-  imgName: string,
+  imgClass: string,
   path: string
 }
 
 export default function SVGLogo(props: SVGLogoProps) {
-  const { imgName, path } = props
+  const { imgClass, path } = props
   return (
-    <img className={'svg-logo ' + imgName} src={`/svgs/${path}.svg`} alt={path} />
+    <img className={'svg-logo ' + imgClass} src={`/svgs/${path}.svg`} alt={path} />
   )
 }

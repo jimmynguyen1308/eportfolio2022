@@ -10,6 +10,7 @@ export interface routerProps {
   element: React.ReactElement,
   name?: string,
   imgPath?: string,
+  note?: string
 }
 
 const useRoutes = () => {
@@ -18,19 +19,22 @@ const useRoutes = () => {
       path: '/',
       element: <Home />,
       name: sectionConst.HOME,
-      imgPath: iconConst.HOME
+      imgPath: iconConst.HOME,
+      note: 'Go to homepage'
     },
     {
       path: '/portfolio',
       element: <Portfolio />,
       name: sectionConst.PORTFOLIO,
-      imgPath: iconConst.PORTFOLIO
+      imgPath: iconConst.PORTFOLIO,
+      note: 'Come to see my work'
     },
     {
       path: '/articles',
       element: <Articles />,
       name: sectionConst.ARTICLES,
-      imgPath: iconConst.ARTICLES
+      imgPath: iconConst.ARTICLES,
+      note: 'Things written by me'
     },
     {
       path: '/articles/:id',
@@ -40,7 +44,8 @@ const useRoutes = () => {
       path: '/contact',
       element: <Contact />,
       name: sectionConst.CONTACT,
-      imgPath: iconConst.CONTACT
+      imgPath: iconConst.CONTACT,
+      note: 'Reach out to me'
     }
   ]
   return {
