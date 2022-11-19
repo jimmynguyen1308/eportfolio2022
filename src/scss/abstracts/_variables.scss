@@ -15,11 +15,16 @@ $SVG_grey:    invert(86%) sepia(10%) saturate(8%) hue-rotate(45deg) brightness(9
 $SVG_blue:    invert(66%) sepia(86%) saturate(444%) hue-rotate(165deg) brightness(96%) contrast(92%);
 $SVG_orange:  invert(59%) sepia(40%) saturate(3821%) hue-rotate(328deg) brightness(94%) contrast(101%);
 
+// default variables
+$default-font-size: 18px;
+$small-font-size: 0.8rem;
+$heading-font-size: 1.67rem;
+$large-heading-font-size: 2.25rem;
+
 // dark-theme basics
 $dark-background: $black2;
 $dark-text-color: $white;
 $dark-header-color: $black3;
-
 
 // light-theme basics
 $light-background: $white2;

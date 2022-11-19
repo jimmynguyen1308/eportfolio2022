@@ -4,16 +4,25 @@
 
 html {
   font-family: 'Inter';
-  font-size: 18px;
+  font-size: $default-font-size;
+  h1 {
+    font-family: 'Oswald';
+  }
   p {
     letter-spacing: 0.03rem;
     line-height: 1.7;
   }
+  mark {
+    background: $orange;
+  }
+  abbr {
+    text-decoration: none;
+  }
   .prevent-highlight {
-    -webkit-user-select: none;    /* Safari */
-    -moz-user-select: none;       /* Firefox */
-    -ms-user-select: none;        /* IE10+/Edge */
-    user-select: none;            /* Standard */
+    -webkit-user-select: none;      // Safari
+    -moz-user-select: none;         // Firefox
+    -ms-user-select: none;          // IE10+/Edge
+    user-select: none;              // Standard
   }
 }
 
