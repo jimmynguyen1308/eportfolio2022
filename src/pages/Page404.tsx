@@ -9,8 +9,10 @@ export default function Page404() {
         section={sectionConst.NOTFOUND}
         description={'Oops! Looks like this page does not exist or it has been removed.'}
       />
-      <h1>404!</h1>
-      <p>Oops! Looks like this page does not exist or it has been removed.</p>
+      <main>
+        <h1>404!</h1>
+        <p>Oops! Looks like this page does not exist or it has been removed.</p>
+      </main>
     </MainLayout>
   )
 }

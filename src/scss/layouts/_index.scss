@@ -1,2 +1,33 @@
 @import 'header';
 @import 'footer';
+@import 'sidebar';
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  margin: 60px auto;
+  padding: 0 5%;
+}
+
+@media only screen and (min-width: 787px) {
+  .content-container.aside {
+    display: grid;
+    grid-template-columns: 7fr 3fr;
+    grid-template-areas: 'main aside';
+    grid-gap: 20px;
+    main {
+      grid-area: main;
+      height: 30vh;
+    }
+    aside {
+      grid-area: aside;
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .content-container {
+    width: 1148px;
+    padding: 0;
+  }
+}

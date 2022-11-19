@@ -3,10 +3,21 @@ header {
   display: flex;
   justify-content: space-evenly;
   .header-content {
-    width: 90%;
+    width: 100%;
+    padding: 0 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    #brand-text {
+      &:hover {
+        transform: scale(0.95);
+        transition: 0.25s;
+      }
+      &:not(hover) {
+        transform: scale(1);
+        transition: 0.25s;
+      }
+    }
     a {
       text-decoration: none;
       &:hover {
@@ -15,7 +26,7 @@ header {
     }
     h1 {
       color: $orange;
-      font-size: 30px;
+      font-size: $heading-font-size;
     }
   }
 }
@@ -31,17 +42,11 @@ header {
   }
 }
 
-@media only screen and (min-width: 768px) {
-}
-
-@media only screen and (min-width: 1024px) {
-
-}
-
 @media only screen and (min-width: 1200px) {
   header {
     .header-content {
       width: 1148px;
+      padding: 0;
     }
   }
 }

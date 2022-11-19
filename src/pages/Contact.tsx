@@ -9,7 +9,9 @@ export default function Contact() {
         section={sectionConst.CONTACT}
         description={'Welcome! My name is Nhat K. "James" Nguyen.'}
       />
-      <h1>Contact</h1>
+      <main>
+        <h1>Contact</h1>
+      </main>
     </MainLayout>
   )
 }

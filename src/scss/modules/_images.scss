@@ -1,3 +1,7 @@
 .svg-logo {
   width: 60px;
 }
+
+img:not(.svg-logo) {
+  object-fit: cover;
+}

@@ -9,7 +9,9 @@ export default function Portfolio() {
         section={sectionConst.PORTFOLIO}
         description={'Welcome! My name is Nhat K. "James" Nguyen.'}
       />
-      <h1>Portfolio</h1>
+      <main>
+        <h1>Portfolio</h1>
+      </main>
     </MainLayout>
   )
 }

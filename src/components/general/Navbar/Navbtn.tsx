@@ -4,11 +4,12 @@ import SVGLogo from '../SVGLogo'
 interface NavbtnProps {
   title: string,
   imgPath: string,
-  navLink: string
+  navLink: string,
+  note: string
 }
 
 export default function Navbtn(props: NavbtnProps) {
-  const { title, imgPath, navLink } = props
+  const { title, imgPath, navLink, note } = props
   const pathname = window.location.pathname
 
   let BtnClass = 'nav-btn'
@@ -18,13 +19,15 @@ export default function Navbtn(props: NavbtnProps) {
 
   return (
     <NavLink to={navLink}>
+      <abbr title={note}>
       <div className={BtnClass}>
         <SVGLogo
-          imgName={'nav-icon ' + title}
+          imgClass={'nav-icon ' + title}
           path={imgPath}
         />
         <span>{title}</span>
       </div>
+      </abbr>
     </NavLink>
   )
 }

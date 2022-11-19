@@ -4,7 +4,14 @@
   a:hover {
     color: $dark-text-color;
   }
-
+  .svg-logo:not(.svg-logo.nav-icon) {
+    filter: $SVG_white;
+    &:hover {
+      animation: iconShake 1.7s infinite;
+      filter: $SVG_orange;
+      transition: 0.15s;
+    }
+  }
   .app-content {
     header {
       background-color: $dark-header-color;
@@ -14,6 +21,20 @@
           .svg-logo {
             filter: $SVG_white;
           }
+        }
+      }
+    }
+    aside {
+      border: 1px solid $white;
+      h1#title {
+        color: $dark-text-color;
+        background-color: $dark-background;
+      }
+      .search-bar {
+        border: 2px solid $white2;
+        &:focus-within {
+          border: 2px solid $orange;
+          transition: 0.25s;
         }
       }
     }

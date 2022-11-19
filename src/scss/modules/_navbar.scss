@@ -5,39 +5,28 @@ nav#nav-bar {
   a {
     .nav-btn {
       display: flex;
+      flex-direction: column;
       align-items: center;
       gap: 10px;
+      .svg-logo.nav-icon.Home {
+        margin: 3.5px 0;
+      }
+      &:hover {
+        transform: scale(0.9);
+        transition: 0.15s;
+        .svg-logo {
+          animation: iconShake 1.7s infinite;
+        }
+      }
+      &:not(hover) {
+        transform: scale(1);
+        transition: 0.15s;
+      }
     }
     .nav-btn.active {
       color: $orange;
       .svg-logo {
         filter: $SVG_orange;
-      }
-    }
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  nav#nav-bar {
-    a {
-      .nav-btn {
-        flex-direction: column;
-        .svg-logo.nav-icon.Home {
-          margin: 3.5px 0;
-        }
-      }
-    }
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  nav#nav-bar {
-    a {
-      .nav-btn {
-        flex-direction: column;
-        .svg-logo.nav-icon.Home {
-          margin: 3.5px 0;
-        }
       }
     }
   }
@@ -51,8 +40,4 @@ nav#nav-bar {
       }
     }
   }
-}
-
-@media only screen and (min-width: 1200px) {
-  
 }

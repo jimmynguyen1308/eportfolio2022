@@ -13,6 +13,7 @@ export default function Navbar() {
             title={route.name}
             imgPath={route.imgPath}
             navLink={route.path}
+            note={route.note}
           />
         )}
       )}
