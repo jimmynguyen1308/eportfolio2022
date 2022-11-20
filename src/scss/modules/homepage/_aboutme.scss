@@ -1,6 +1,6 @@
 .app-content.home-page {
   .homepage-aboutme {
-    background-color: $orange;
+    background-color: $orange2;
     position: relative;
     overflow: hidden;
     padding: 50px;
@@ -28,6 +28,7 @@
       color: white;
       text-shadow: 0 0 3px $black;
       margin-bottom: 0.6em;
+      filter: brightness(120%);
       b {
         font-weight: bolder;
       }
