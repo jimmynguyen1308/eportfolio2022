@@ -4,14 +4,12 @@ import { sectionConst } from '../constants/route.const'
 
 export default function Contact() {
   return (
-    <MainLayout name={'contact-page'}>
+    <MainLayout name={'contact-page'} aside={false}>
       <MetaTags
         section={sectionConst.CONTACT}
         description={'Welcome! My name is Nhat K. "James" Nguyen.'}
       />
-      <main>
-        <h1>Contact</h1>
-      </main>
+      <h1>Contact</h1>
     </MainLayout>
   )
 }
