@@ -25,11 +25,6 @@
       }
     }
     aside {
-      border: 1px solid $white;
-      h1#title {
-        color: $dark-text-color;
-        background-color: $dark-background;
-      }
       .search-bar {
         border: 2px solid $white2;
         &:focus-within {
@@ -37,6 +32,11 @@
           transition: 0.25s;
         }
       }
+    }
+  }
+  .app-content.home-page {
+    .homepage-aboutme {
+      box-shadow: 5px 5px 0px $white;
     }
   }
 }
