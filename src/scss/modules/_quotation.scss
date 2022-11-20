@@ -1,0 +1,17 @@
+.app-container {
+  blockquote {
+    width: 80%;
+    position: relative;
+    font-family: 'Oswald';
+    font-size: $heading-font-size;
+    border-left: 5px solid $orange;
+    padding: 30px;
+    margin: 50px auto;
+    p {
+      font-family: 'Inter';
+      font-size: $default-font-size;
+      text-align: right;
+      margin-top: 30px;
+    }
+  }
+}
