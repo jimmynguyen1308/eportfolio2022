@@ -7,6 +7,9 @@ html {
   font-size: $default-font-size;
   h1 {
     font-family: 'Oswald';
+    font-size: $heading-font-size;
+    font-weight: bolder;
+    margin-bottom: 15px;
   }
   p {
     letter-spacing: 0.03rem;
