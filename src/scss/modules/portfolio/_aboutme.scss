@@ -11,8 +11,6 @@
     }
     .aboutme-card-wrapper {
       width: calc(min(100%, 800px));
-      border-top: 2px solid $dark-text-color;
-      border-bottom: 2px solid $dark-text-color;
       position: relative;
       overflow: hidden;
       margin: 0 auto;
@@ -31,9 +29,9 @@
           z-index: -1;
           img.aboutme-portrait {
             position: absolute;
-            width: 250px;
+            width: 200px;
             border-radius: 50%;
-            bottom: -55px;
+            bottom: 0;
             left: -55px;
             filter: grayscale(30%) brightness(50%);
             z-index: -1;
@@ -49,6 +47,7 @@
             z-index: -1;
           }
           p {
+            font-style: italic;
             text-shadow: 0 0 3px $dark-background;
             filter: brightness(120%);
             padding: 0 10px;
@@ -74,8 +73,6 @@
 .app-content.portfolio-page.light-theme {
   .portfolio-aboutme {
     .aboutme-card-wrapper {
-      border-top: 2px solid $light-text-color;
-      border-bottom: 2px solid $light-text-color;
       .aboutme-card-list {
         .aboutme-card {
           img.aboutme-portrait {

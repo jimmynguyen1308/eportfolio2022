@@ -11,7 +11,7 @@ export default function AboutMe() {
         setChosen(0)
       else
         setChosen(chosen+1)
-    }, 5000)
+    }, 6500)
     return () => clearInterval(interval)
   }, [chosen])
   
