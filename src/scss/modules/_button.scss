@@ -12,3 +12,15 @@ button.has-icon {
   justify-content: space-between;
   align-items: center;
 }
+
+button.button-pill {
+  background-color: transparent;
+  border-radius: 30px;
+  padding: 5px 10px;
+  margin: 7px;
+}
+
+button.button-pill.active {
+  background-color: $orange;
+  transition: 0.1s;
+}

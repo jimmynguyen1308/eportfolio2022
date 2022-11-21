@@ -1,6 +1,10 @@
 .app-content.dark-theme {
   color: $dark-text-color;
   background-color: $dark-background;
+  button.button-pill {
+    color: $dark-text-color;
+    border: 1px solid $dark-text-color;
+  }
   a:hover {
     color: $dark-text-color;
   }
@@ -26,11 +30,6 @@
           transition: 0.25s;
         }
       }
-    }
-  }
-  .app-content.portfolio-page {
-    .homepage-aboutme {
-      box-shadow: 5px 5px 0px $white;
     }
   }
 }

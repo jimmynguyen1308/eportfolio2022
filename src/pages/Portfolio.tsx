@@ -4,6 +4,7 @@ import { sectionConst } from '../constants/route.const'
 
 // components
 import Cover from '../components/portfolio/Cover'
+import AboutMe from '../components/portfolio/AboutMe'
 
 export default function Portfolio() {
   return (
@@ -12,6 +13,7 @@ export default function Portfolio() {
         section={sectionConst.PORTFOLIO}
         description={'Welcome! My name is Nhat K. "James" Nguyen.'}
       />
+      <AboutMe />
     </MainLayout>
   )
 }

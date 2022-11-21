@@ -1,6 +1,10 @@
 .app-content.light-theme {
   color: $light-text-color;
   background-color: $light-background;
+  button.button-pill {
+    color: $light-text-color;
+    border: 1px solid $light-text-color;
+  }
   a:hover {
     color: $light-text-color;
   }
@@ -23,11 +27,6 @@
           transition: 0.25s;
         }
       }
-    }
-  }
-  .app-content.portfolio-page {
-    .homepage-aboutme {
-      box-shadow: 5px 5px 0px $black;
     }
   }
 }

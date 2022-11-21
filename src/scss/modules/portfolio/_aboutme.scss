@@ -1,36 +1,91 @@
 .app-content.portfolio-page {
-  .homepage-aboutme {
-    background-color: $orange2;
-    position: relative;
-    overflow: hidden;
-    padding: 50px;
-    z-index: -1;
-    img.aboutme-portrait {
-      position: absolute;
-      width: 250px;
-      border-radius: 50%;
-      top: 40px;
-      margin: 0 auto -50px -90px;
-      filter: grayscale(60%) brightness(50%);
-      z-index: -1;
+  .portfolio-aboutme {
+    margin: 0 auto;
+    p.ask-me-something {
+      font-size: 1.3em;
+      text-align: center;
     }
-    div.background-text {
-      position: absolute;
-      top: 0px;
-      right: -20px;
-      -webkit-text-stroke: 2px $black3;
-      color: transparent;
-      font-family: 'Oswald';
-      font-size: 100px;
-      z-index: -1;
+    .button-pill-list {
+      text-align: center;
+      margin-bottom: 25px;
     }
-    p {
-      color: white;
-      text-shadow: 0 0 3px $black;
-      margin-bottom: 0.6em;
-      filter: brightness(120%);
-      b {
-        font-weight: bolder;
+    .aboutme-card-wrapper {
+      width: calc(min(100%, 800px));
+      border-top: 2px solid $dark-text-color;
+      border-bottom: 2px solid $dark-text-color;
+      position: relative;
+      overflow: hidden;
+      margin: 0 auto;
+      .aboutme-card-list {        
+        display: flex;
+        flex-direction: row;
+        transform: translateX(0);
+        transition: 0.25s;
+        .aboutme-card {
+          min-width: calc(min(100%, 800px));
+          min-height: 250px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 20px;
+          z-index: -1;
+          img.aboutme-portrait {
+            position: absolute;
+            width: 250px;
+            border-radius: 50%;
+            bottom: -55px;
+            left: -55px;
+            filter: grayscale(30%) brightness(50%);
+            z-index: -1;
+          }
+          h1.background-text {
+            position: absolute;
+            width: max-content;
+            -webkit-text-stroke: 2px $orange;
+            color: transparent;
+            font-family: 'Anton';
+            font-size: $large-background-text-font-size;
+            text-transform: uppercase;
+            z-index: -1;
+          }
+          p {
+            text-shadow: 0 0 3px $dark-background;
+            filter: brightness(120%);
+            padding: 0 10px;
+          }
+        }
+        .aboutme-card:first-child > h1.background-text {
+          top: 10px;
+          right: -50px;
+        }
+        .aboutme-card:nth-child(2) > h1.background-text {
+          bottom: -35px;
+          margin-left: 30px;
+        }
+        .aboutme-card:last-child > h1.background-text {
+          top: 25%;
+          margin-left: 50%;
+        }
+      }
+    }
+  }
+}
+
+.app-content.portfolio-page.light-theme {
+  .portfolio-aboutme {
+    .aboutme-card-wrapper {
+      border-top: 2px solid $light-text-color;
+      border-bottom: 2px solid $light-text-color;
+      .aboutme-card-list {
+        .aboutme-card {
+          img.aboutme-portrait {
+            filter: grayscale(30%) brightness(80%);
+          }
+          p {
+            text-shadow: 0 0 3px $light-background;
+            filter: brightness(70%);
+          }
+        }
       }
     }
   }
