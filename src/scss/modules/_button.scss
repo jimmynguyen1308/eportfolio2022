@@ -1,0 +1,14 @@
+button {
+  min-width: 50px;
+  background-color: $orange;
+  color: $white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button.has-icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

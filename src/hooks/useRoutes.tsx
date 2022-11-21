@@ -1,15 +1,14 @@
 import React from 'react'
 import { sectionConst, iconConst } from '../constants/route.const'
 import Home from '../pages/Home'
-import Portfolio from '../pages/Portfolio'
 import Articles from '../pages/Articles'
 import Contact from '../pages/Contact'
 
 export interface routerProps {
-  path: string,
-  element: React.ReactElement,
-  name?: string,
-  imgPath?: string,
+  path: string
+  element: React.ReactElement
+  name?: string
+  imgPath?: string
   note?: string
 }
 
@@ -18,23 +17,16 @@ const useRoutes = () => {
     {
       path: '/',
       element: <Home />,
-      name: sectionConst.HOME,
-      imgPath: iconConst.HOME,
-      note: 'Go to homepage'
-    },
-    {
-      path: '/portfolio',
-      element: <Portfolio />,
       name: sectionConst.PORTFOLIO,
       imgPath: iconConst.PORTFOLIO,
-      note: 'Come to see my work'
+      note: 'Representation of myself and my working career.'
     },
     {
       path: '/articles',
       element: <Articles />,
       name: sectionConst.ARTICLES,
       imgPath: iconConst.ARTICLES,
-      note: 'Things written by me'
+      note: 'Blogs, articles and all things in between that written by me.'
     },
     {
       path: '/articles/:id',
@@ -45,7 +37,7 @@ const useRoutes = () => {
       element: <Contact />,
       name: sectionConst.CONTACT,
       imgPath: iconConst.CONTACT,
-      note: 'Reach out to me'
+      note: `Reach out to me... or not. I'm not your dad.`
     }
   ]
   return {

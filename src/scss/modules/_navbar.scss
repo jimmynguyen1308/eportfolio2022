@@ -1,16 +1,26 @@
 nav#nav-bar {
+  width: $navbar-width;
+  position: absolute;
+  top: 60px;
   display: flex;
-  gap: 30px;
+  flex-direction: column;
   padding: 15px;
+  .svg-logo {
+    filter: $SVG_white;
+  }
+  .menu-close {
+    margin: 15px auto 30px auto;
+    cursor: pointer;
+  }
   a {
     .nav-btn {
       display: flex;
-      flex-direction: column;
       align-items: center;
-      gap: 10px;
-      .svg-logo.nav-icon.Home {
-        margin: 3.5px 0;
-      }
+      gap: 15px;
+      font-family: 'Oswald';
+      font-size: $heading-font-size;
+      font-weight: bold;
+      color: $white;
       &:hover {
         transform: scale(0.9);
         transition: 0.15s;
@@ -24,20 +34,29 @@ nav#nav-bar {
       }
     }
     .nav-btn.active {
-      color: $orange;
       .svg-logo {
-        filter: $SVG_orange;
+        animation: iconShake 1.7s infinite;
       }
+      }
+    // }
+    &:hover {
+      text-decoration: none;
     }
+  }
+  .nav-icon-note {
+    color: $black;
+    font-size: $small-font-size;
+    margin-left: 65px;
+    margin-bottom: 30px;
   }
 }
 
-@media only screen and (min-width: 1024px) {
-  nav#nav-bar {
-    a {
-      .nav-btn {
-        flex-direction: row;
-      }
-    }
-  }
-}
+// @media only screen and (min-width: 1024px) {
+//   nav#nav-bar {
+//     a {
+//       .nav-btn {
+//         flex-direction: row;
+//       }
+//     }
+//   }
+// }

@@ -2,8 +2,8 @@ import { Helmet } from 'react-helmet'
 import Logo from './logo.jpg'
 
 interface MetaTagsProps {
-  section?: string,
-  description: string,
+  section?: string
+  description: string
   image?: string
 }
 

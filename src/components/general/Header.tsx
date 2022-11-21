@@ -1,7 +1,12 @@
 import { Link } from 'react-router-dom'
-import Navbar from './Navbar'
+import Button from './Button'
+import SVGLogo from './SVGLogo'
 
-export default function Header() {
+interface HeaderProps {
+  handleClick: Function
+}
+
+export default function Header(props: HeaderProps) {
   return (
     <header>
       <div className='header-content prevent-highlight'>
@@ -11,7 +16,12 @@ export default function Header() {
             <p>@jimmynguyen1308</p>
           </Link>
         </div>
-        <Navbar />
+        <Button
+          buttonClass='menu-btn'
+          handleClick={props.handleClick}
+          text={'Menu'}
+          icon={<SVGLogo imgClass={'icon-menu'} path={'icon-menu'} />}
+        />
       </div>
     </header>
   )

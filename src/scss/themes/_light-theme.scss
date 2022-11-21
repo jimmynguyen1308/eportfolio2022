@@ -1,20 +1,14 @@
-.app-container.light-theme {
+.app-content.light-theme {
   color: $light-text-color;
   background-color: $light-background;
   a:hover {
     color: $light-text-color;
   }
-  .svg-logo:not(.svg-logo.nav-icon) {
+  .svg-logo:not(.svg-logo.nav-icon, .svg-logo.icon-menu) {
     filter: $SVG_black;
-    &:hover {
-      animation: iconShake 1.7s infinite;
-      filter: $SVG_orange;
-      transition: 0.15s;
-    }
   }
   .app-content {
     header {
-      background-color: $light-header-color;
       .header-content {
         a {
           color: $light-text-color;

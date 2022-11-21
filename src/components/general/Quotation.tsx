@@ -1,6 +1,6 @@
 interface QuotationProps {
-  quoteClass: string,
-  quote: string,
+  quoteClass: string
+  quote: string
   author: string
 }
 

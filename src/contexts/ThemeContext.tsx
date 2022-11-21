@@ -7,7 +7,7 @@ interface ThemeContextProviderProps {
 }
 
 interface ThemeContextDefault {
-  theme: string,
+  theme: string
   changeTheme: (newTheme: string) => void
 }
 

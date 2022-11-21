@@ -1,4 +1,4 @@
-.app-container.dark-theme {
+.app-content.dark-theme {
   color: $dark-text-color;
   background-color: $dark-background;
   a:hover {
@@ -6,15 +6,9 @@
   }
   .svg-logo:not(.svg-logo.nav-icon) {
     filter: $SVG_white;
-    &:hover {
-      animation: iconShake 1.7s infinite;
-      filter: $SVG_orange;
-      transition: 0.15s;
-    }
   }
   .app-content {
     header {
-      background-color: $dark-header-color;
       .header-content {
         a {
           color: $dark-text-color;

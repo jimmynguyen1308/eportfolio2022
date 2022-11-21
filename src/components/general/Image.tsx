@@ -1,7 +1,7 @@
 interface ImageProps {
-  imgClass: string,
-  folder: string,
-  file: string,
+  imgClass: string
+  folder: string
+  file: string
 }
 
 export default function Image(props: ImageProps) {

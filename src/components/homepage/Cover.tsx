@@ -10,6 +10,7 @@ export default function Cover() {
       />
       <div className='cover-text'>
         <p>Greetings!<br />My name is <mark>Nhat K. "James" Nguyen</mark>.</p>
+        <span>blogger | frontend developer | detail obsessor</span>
       </div>
     </div>
     
