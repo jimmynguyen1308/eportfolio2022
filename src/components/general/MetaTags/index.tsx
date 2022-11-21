@@ -7,16 +7,16 @@ interface MetaTagsProps {
   image?: string
 }
 
-const SiteTitle = "JimmyNguyen1308"
-const SiteUrl = "jimmynguyen1308.net"
+const SiteTitle = 'JimmyNguyen1308'
+const SiteUrl = 'jimmynguyen1308.net'
 
 export default function MetaTags(props: MetaTagsProps) {
   const { section, description, image } = props
 
-  let title = section || "Home"
-  let img = ""
+  let title = section || 'Portfolio'
+  let img = ''
 
-  section && section!=="Home" ? title+=` | ${SiteTitle}` : title=`${SiteTitle}`
+  section && section!=='Portfolio' ? title+=` | ${SiteTitle}` : title=`${SiteTitle}`
   image ? img = image : img = Logo
 
   return (

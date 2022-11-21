@@ -1,6 +1,6 @@
 import React from 'react'
 import { sectionConst, iconConst } from '../constants/route.const'
-import Home from '../pages/Home'
+import Portfolio from '../pages/Portfolio'
 import Articles from '../pages/Articles'
 import Contact from '../pages/Contact'
 
@@ -15,8 +15,8 @@ export interface routerProps {
 const useRoutes = () => {
   const router: Array<routerProps> = [
     {
-      path: '/',
-      element: <Home />,
+      path: '/portfolio',
+      element: <Portfolio />,
       name: sectionConst.PORTFOLIO,
       imgPath: iconConst.PORTFOLIO,
       note: 'Representation of myself and my working career.'

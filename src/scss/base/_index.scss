@@ -30,7 +30,7 @@ html {
 }
 
 .app-container {
-  background-color: $orange2;
+  background-color: $orange;
   position: absolute;
   top: 0;
   left: 0;
@@ -50,6 +50,7 @@ html {
     transition: 0.15s;
   }
   .app-content.collapsed {
+    border-radius: 30px;
     overflow: hidden;
     transform: translate($navbar-width, 60px);
     transition: 0.3s;

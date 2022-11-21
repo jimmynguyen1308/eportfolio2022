@@ -11,7 +11,7 @@ export default function Header(props: HeaderProps) {
     <header>
       <div className='header-content prevent-highlight'>
         <div id={'brand-text'}>
-          <Link to='/'>
+          <Link to='/portfolio'>
             <h1>JAMES NGUYEN</h1>
             <p>@jimmynguyen1308</p>
           </Link>

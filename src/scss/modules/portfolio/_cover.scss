@@ -1,4 +1,4 @@
-.app-content.home-page {
+.app-content.portfolio-page {
   perspective: 0;
   .homepage-cover {
     position: relative;
@@ -33,7 +33,7 @@
 }
 
 @media only screen and (max-width: 786px) {
-  .app-content.home-page {
+  .app-content.portfolio-page {
     .homepage-cover {
       .cover-text {
         width: 90%;
@@ -43,7 +43,7 @@
 }
 
 @media only screen and (min-width: 1024px) {
-  .app-content.home-page {
+  .app-content.portfolio-page {
     .homepage-cover {
       .cover-text {
         font-size: $large-heading-font-size;
