@@ -11,6 +11,12 @@ html {
     font-weight: bolder;
     margin-bottom: 0.5em;
   }
+  h2 {
+    font-size: calc($default-font-size * 1.5);
+    font-weight: bolder;
+    margin-bottom: 0.5em;
+    line-height: 1.2;
+  }
   p {
     letter-spacing: 0.03rem;
     line-height: 1.7;
@@ -52,6 +58,7 @@ html {
   .app-content {
     transform: translate(0, 0);
     transition: 0.15s;
+    margin-bottom: -60px;
   }
   .app-content.collapsed {
     border-radius: 30px;

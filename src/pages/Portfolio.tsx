@@ -5,6 +5,7 @@ import { sectionConst } from "../constants/route.const"
 // components
 import Cover from "../components/portfolio/Cover"
 import Summary from "../components/portfolio/Summary"
+import MyWork from "../components/portfolio/MyWork"
 import AboutMe from "../components/portfolio/AboutMe"
 
 export default function Portfolio() {
@@ -15,9 +16,9 @@ export default function Portfolio() {
         description={'Welcome! My name is Nhat K. "James" Nguyen.'}
       />
       <Summary />
+      <MyWork />
       {/* <AboutMe /> */}
-      {/* <h1>My Work</h1>
-      <h1>About Me</h1> */}
+      {/* <h1>About Me</h1> */}
     </MainLayout>
   )
 }

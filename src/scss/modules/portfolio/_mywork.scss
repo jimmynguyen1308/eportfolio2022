@@ -1,0 +1,46 @@
+.app-content.portfolio-page {
+  .portfolio-mywork {
+    .mywork-item {
+      margin-bottom: 20px;
+      .mywork-card {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .title {
+          margin-right: 20px;
+        }
+        button.mywork-expand-button {
+          width: 30px;
+          height: 50px;
+          .svg-logo.icon-expand {
+            transform: rotate(90deg);
+            transition: 0.15s;
+          }
+        }
+        button.mywork-expand-button.active {
+          .svg-logo.icon-expand {
+            transform: rotate(-90deg);
+            transition: 0.15s;
+          }
+        }
+      }
+    }
+
+    h2 {
+      font-weight: bolder;
+      color: $orange2;
+    }
+    ul {
+      margin-left: 40px;
+      margin-bottom: 40px;
+    }
+    ul.active {
+      animation: slideFadeIn 0.25s ease-in;
+    }
+    ul > li {
+      list-style-type: circle;
+      margin-bottom: 0.5em;
+      line-height: 1.7;
+    }
+  }
+}

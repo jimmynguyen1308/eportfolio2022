@@ -1,0 +1,95 @@
+{
+  "name": "My Work",
+  "date": "2023-01-08",
+  "data": [
+    {
+      "name": "Scenario-based ZKP Prototype © CSIRO Data61",
+      "title": "Software Engineer Intern",
+      "startTime": "Nov 2019",
+      "endTime": "Feb 2020",
+      "responsibilities": [
+        "Researched and learnt about Zero-Knowledge Proof (ZKP) concepts; experimented and tested the libraries supporting ZKP.",
+        "Developed a prototype in C++ programming language of a scenario based ZKP verification system via Linux OS.",
+        "Presented the built prototype to the CSIRO Data61 researchers; documented and published the prototype to GitHub."
+      ]
+    },
+    {
+      "name": "Data Visualisation App",
+      "title": "Software Engineer",
+      "startTime": "May 2020",
+      "endTime": "Jul 2020",
+      "responsibilities": [
+        "Developed the software's user-friendly UI using HTML5, CSS & JavaScript.",
+        "Visualised the data inputted by the user by creating tables & graphs."
+      ]
+    },
+    {
+      "name": "Lotus Social Media",
+      "title": "Associate Frontend Developer",
+      "startTime": "Aug 2020",
+      "endTime": "Nov 2020",
+      "responsibilities": [
+        "Designed new components & prototypes that enhanced the site’s user experience.",
+        "Work alongside with the dev team to deploy the proposed prototypes to the existing landing pages."
+      ]
+    },
+    {
+      "name": "Toy Universe Website",
+      "title": "Frontend Developer",
+      "startTime": "Jan 2021",
+      "endTime": "Apr 2021",
+      "responsibilities": [
+        "Redesigned the site's frontend design using ReactJS.",
+        "Worked with the marketing team to strategise the most efficient design for the site.",
+        "Worked with the site’s RESTful APIs, and proposed solutions to improve its backend."
+      ]
+    },
+    {
+      "name": "Juicy Bao's Contactless Menu",
+      "title": "Full Stack Developer",
+      "startTime": "Feb 2021",
+      "endTime": "Apr 2021",
+      "responsibilities": [
+        "Made design for the restaurant's online menu.",
+        "Handled and restructured data and images from the menu database.",
+        "Developed payment methods for the app to be functional and secure."
+      ]
+    },
+    {
+      "name": "Gift Card Messenger App",
+      "title": "Frontend Developer",
+      "startTime": "Apr 2021",
+      "endTime": "Nov 2021",
+      "responsibilities": [
+        "Worked in a collaborative and agile team to develop and structure JavaScript applications and RESTful Web APIs for the software.",
+        "Identified mobile strategies and designed mobile responsive app for multiple operating systems.",
+        "Designed, assisted and developed software’s visualisations in accordance with UI/UX theories.",
+        "Deployed and tested services with a focus on performance and scalability."
+      ]
+    },
+    {
+      "name": "Dulich9 Website",
+      "title": "Frontend/SEO Developer",
+      "startTime": "Nov 2021",
+      "endTime": "Feb 2022",
+      "responsibilities": [
+        "Developed the final prototype for the website using ReactJS.",
+        "Researched, strategised & deployed different SEO approaches in order to acquire high search ratings.",
+        "Deployed unit & system tests to examine new frontend components and the effectiveness of the newly-deployed SEO."
+      ]
+    },
+    {
+      "name": "LifeByte Trading Software",
+      "title": "Frontend Developer",
+      "startTime": "Mar 2022",
+      "endTime": "present",
+      "responsibilities": [
+        "Collaborating with a range of team members and stakeholders.",
+        "Developing new user-facing features and building reusable code and libraries for future use.",
+        "Ensuring the technical feasibility of UI/UX designs.",
+        "Validating all the user input before submission to the backend.",
+        "Optimising the delivery of code and assets that mobile and browser responsive."
+      ]
+    }
+  ]
+}
