@@ -1,14 +1,14 @@
-import Searchbar from './Searchbar'
-import RecentPosts from './RecentPosts'
-import AboutMe from './AboutMe'
+import Searchbar from "./Searchbar"
+import RecentPosts from "./RecentPosts"
+import AboutMe from "./AboutMe"
 
 export default function Sidebar() {
   return (
     <aside>
-      <Searchbar />
+      {/* <Searchbar /> */}
       <RecentPosts />
       <AboutMe />
-      
+
       {/* <iframe
         style={{ width: "100%", height: "800px" }}
         src="/pdfs/NhatNguyen-Resume.pdf"
