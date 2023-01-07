@@ -1,0 +1,14 @@
+.app-content.contact-page {
+  .portfolio-contact {
+    a {
+      width: fit-content;
+      display: flex;
+      align-items: center;
+      margin-left: 10px;
+      margin-bottom: 10px;
+      .svg-logo.icon-contact {
+        margin-right: 15px;
+      }
+    }
+  }
+}

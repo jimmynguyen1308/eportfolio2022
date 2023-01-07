@@ -6,6 +6,7 @@ import Cover from "../components/portfolio/Cover"
 import Summary from "../components/portfolio/Summary"
 import MyWork from "../components/portfolio/MyWork"
 import FAQ from "../components/portfolio/FAQ"
+import Contact from "../components/portfolio/Contact"
 
 export default function Portfolio() {
   return (
@@ -17,6 +18,7 @@ export default function Portfolio() {
       <Summary />
       <MyWork />
       <FAQ />
+      <Contact />
     </MainLayout>
   )
 }
