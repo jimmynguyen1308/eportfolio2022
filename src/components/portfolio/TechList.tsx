@@ -4,16 +4,66 @@ import Image from "../general/Image"
 export default function TechList() {
   return (
     <div className="tech-list">
-      <Image imgClass="tech-list-icon" folder="logos" file="html5.png" />
-      <Image imgClass="tech-list-icon" folder="logos" file="css.png" />
-      <Image imgClass="tech-list-icon" folder="logos" file="js.png" />
-      <Image imgClass="tech-list-icon" folder="logos" file="react.png" />
-      <Image imgClass="tech-list-icon" folder="logos" file="ts.png" />
-      <Image imgClass="tech-list-icon" folder="logos" file="bootstrap.png" />
-      <Image imgClass="tech-list-icon" folder="logos" file="sass.png" />
-      <Image imgClass="tech-list-icon" folder="logos" file="nodejs.png" />
-      <Image imgClass="tech-list-icon" folder="logos" file="mongodb.png" />
-      <Image imgClass="tech-list-icon" folder="logos" file="git.png" />
+      <Image
+        imgClass="tech-list-icon"
+        folder="logos"
+        file="html5.png"
+        abbr={"HTML5"}
+      />
+      <Image
+        imgClass="tech-list-icon"
+        folder="logos"
+        file="css.png"
+        abbr={"CSS"}
+      />
+      <Image
+        imgClass="tech-list-icon"
+        folder="logos"
+        file="js.png"
+        abbr={"JavaScript"}
+      />
+      <Image
+        imgClass="tech-list-icon"
+        folder="logos"
+        file="react.png"
+        abbr={"ReactJS"}
+      />
+      <Image
+        imgClass="tech-list-icon"
+        folder="logos"
+        file="ts.png"
+        abbr={"TypeScript"}
+      />
+      <Image
+        imgClass="tech-list-icon"
+        folder="logos"
+        file="bootstrap.png"
+        abbr={"Bootstrap"}
+      />
+      <Image
+        imgClass="tech-list-icon"
+        folder="logos"
+        file="sass.png"
+        abbr={"SASS"}
+      />
+      <Image
+        imgClass="tech-list-icon"
+        folder="logos"
+        file="nodejs.png"
+        abbr={"NodeJS"}
+      />
+      <Image
+        imgClass="tech-list-icon"
+        folder="logos"
+        file="mongodb.png"
+        abbr={"MongoDB"}
+      />
+      <Image
+        imgClass="tech-list-icon"
+        folder="logos"
+        file="git.png"
+        abbr={"Git"}
+      />
     </div>
   )
 }
