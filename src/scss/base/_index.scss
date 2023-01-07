@@ -1,19 +1,20 @@
-@import 'reset';
-@import 'typography';
-@import '../abstracts/variables';
+@import "reset";
+@import "typography";
+@import "../abstracts/variables";
 
 html {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-size: $default-font-size;
   h1 {
-    font-family: 'Oswald';
+    font-family: "Oswald";
     font-size: $heading-font-size;
     font-weight: bolder;
-    margin-bottom: 15px;
+    margin-bottom: 0.5em;
   }
   p {
     letter-spacing: 0.03rem;
     line-height: 1.7;
+    margin-bottom: 0.5em;
   }
   mark {
     background: $orange;
@@ -22,10 +23,10 @@ html {
     text-decoration: none;
   }
   .prevent-highlight {
-    -webkit-user-select: none;      // Safari
-    -moz-user-select: none;         // Firefox
-    -ms-user-select: none;          // IE10+/Edge
-    user-select: none;              // Standard
+    -webkit-user-select: none; // Safari
+    -moz-user-select: none; // Firefox
+    -ms-user-select: none; // IE10+/Edge
+    user-select: none; // Standard
   }
 }
 
@@ -49,7 +50,7 @@ html {
     font-weight: bolder;
   }
   .app-content {
-    transform: translate(0,0);
+    transform: translate(0, 0);
     transition: 0.15s;
   }
   .app-content.collapsed {
