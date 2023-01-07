@@ -2,11 +2,10 @@ import MainLayout from "../layouts/MainLayout"
 import MetaTags from "../components/general/MetaTags"
 import { sectionConst } from "../constants/route.const"
 
-// components
 import Cover from "../components/portfolio/Cover"
 import Summary from "../components/portfolio/Summary"
 import MyWork from "../components/portfolio/MyWork"
-import AboutMe from "../components/portfolio/AboutMe"
+import FAQ from "../components/portfolio/FAQ"
 
 export default function Portfolio() {
   return (
@@ -17,8 +16,7 @@ export default function Portfolio() {
       />
       <Summary />
       <MyWork />
-      {/* <AboutMe /> */}
-      {/* <h1>About Me</h1> */}
+      <FAQ />
     </MainLayout>
   )
 }

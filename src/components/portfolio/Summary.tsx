@@ -20,7 +20,7 @@ export default function Summary() {
       <p>
         For the last <b>{profileConst.experience} years</b>, I have been
         practicing and developing essentially <b>{profileConst.language}</b>{" "}
-        with the persuit of the <b>web development carreer</b>. Having some
+        with the persuit of the <b>web development career</b>. Having some
         rediculous attention to details, I enjoy building frontend elements to
         establish and/or enhance user interaction and experience towards the
         apps and websites.

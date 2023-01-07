@@ -1,5 +1,5 @@
 .app-content.portfolio-page {
-  .portfolio-aboutme {
+  .portfolio-faq {
     margin: 0 auto;
     p.ask-me-something {
       font-size: 1.3em;
@@ -9,17 +9,17 @@
       text-align: center;
       margin-bottom: 25px;
     }
-    .aboutme-card-wrapper {
+    .faq-card-wrapper {
       width: calc(min(100%, 800px));
       position: relative;
       overflow: hidden;
       margin: 0 auto;
-      .aboutme-card-list {        
+      .faq-card-list {
         display: flex;
         flex-direction: row;
         transform: translateX(0);
         transition: 0.25s;
-        .aboutme-card {
+        .faq-card {
           min-width: calc(min(100%, 800px));
           min-height: 250px;
           display: flex;
@@ -27,21 +27,12 @@
           justify-content: center;
           padding: 20px;
           z-index: -1;
-          img.aboutme-portrait {
-            position: absolute;
-            width: 200px;
-            border-radius: 50%;
-            bottom: 0;
-            left: -55px;
-            filter: grayscale(30%) brightness(50%);
-            z-index: -1;
-          }
           h1.background-text {
             position: absolute;
             width: max-content;
             -webkit-text-stroke: 2px $orange;
             color: transparent;
-            font-family: 'Anton';
+            font-family: "Anton";
             font-size: $large-background-text-font-size;
             text-transform: uppercase;
             z-index: -1;
@@ -52,17 +43,22 @@
             filter: brightness(120%);
             padding: 0 10px;
           }
+          b#contact-link {
+            font-weight: bolder;
+            text-decoration: underline;
+            cursor: pointer;
+          }
         }
-        .aboutme-card:first-child > h1.background-text {
+        .faq-card:first-child > h1.background-text {
           top: 10px;
-          right: -50px;
+          right: -20px;
         }
-        .aboutme-card:nth-child(2) > h1.background-text {
-          bottom: -35px;
+        .faq-card:nth-child(2) > h1.background-text {
+          bottom: -10px;
           margin-left: 30px;
         }
-        .aboutme-card:last-child > h1.background-text {
-          top: 25%;
+        .faq-card:last-child > h1.background-text {
+          top: 20%;
           margin-left: 50%;
         }
       }
@@ -71,13 +67,10 @@
 }
 
 .app-content.portfolio-page.light-theme {
-  .portfolio-aboutme {
-    .aboutme-card-wrapper {
-      .aboutme-card-list {
-        .aboutme-card {
-          img.aboutme-portrait {
-            filter: grayscale(30%) brightness(80%);
-          }
+  .portfolio-faq {
+    .faq-card-wrapper {
+      .faq-card-list {
+        .faq-card {
           p {
             text-shadow: 0 0 3px $light-background;
             filter: brightness(70%);

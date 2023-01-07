@@ -7,3 +7,9 @@ export const profileConst = {
   experience: "3+",
   language: "ReactJS",
 }
+
+export const socialConst = {
+  GITHUB: "https://www.github.com/jimmynguyen1308",
+  LINKEDIN: "https://www.linkedin.com/in/nhatnguyen138",
+  TWITTER: "https://twitter.com/jimmynguyen1308",
+}
