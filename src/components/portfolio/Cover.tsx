@@ -21,7 +21,7 @@ export default function Cover() {
           rel="noopener noreferrer"
         >
           <Button
-            buttonClass="download-resume-btn"
+            buttonClass="download-resume-btn has-icon"
             handleClick={() => {}}
             text="View Resume"
             icon={<SVGLogo imgClass={"icon-resume"} path={"icon-pdf"} />}

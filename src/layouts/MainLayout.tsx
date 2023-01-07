@@ -1,11 +1,12 @@
-import React, { useState, useContext } from 'react'
-import { ThemeContext } from '../contexts/ThemeContext'
+import React, { useState, useContext } from "react"
+import { ThemeContext } from "../contexts/ThemeContext"
 
 // components
-import Navbar from '../components/general/Navbar'
-import Header from '../components/general/Header'
-import Footer from '../components/general/Footer'
-import Sidebar from '../components/general/Sidebar'
+import Navbar from "../components/general/Navbar"
+import Header from "../components/general/Header"
+import BackToTop from "../components/general/BackToTop"
+import Footer from "../components/general/Footer"
+import Sidebar from "../components/general/Sidebar"
 
 interface MainLayoutProps {
   name: string
@@ -23,13 +24,16 @@ export default function MainLayout(props: MainLayoutProps) {
   return (
     <>
       <Navbar handleClick={handleClick} />
-      <div className={`app-content ${name} ${themeData.theme}${toggleMenu ? ' collapsed' : ''}`}>
+      <div
+        className={`app-content ${name} ${themeData.theme}${
+          toggleMenu ? " collapsed" : ""
+        }`}
+      >
         <Header handleClick={handleClick} />
         {cover}
-        <div className={'content-container' + (aside ? ' aside' : '')}>
-          <main>
-            {children}
-          </main>
+        {/* <BackToTop /> */}
+        <div className={"content-container" + (aside ? " aside" : "")}>
+          <main>{children}</main>
           {aside && <Sidebar />}
         </div>
         <Footer />
