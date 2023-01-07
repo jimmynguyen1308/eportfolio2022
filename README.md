@@ -2,4 +2,4 @@
 
 New ePortfolio, started in November 2022.
 
-Click [here](https://jimmynguyen1308.netlify.com){:target="_blank" rel="noopener"} to get to the deployed app on Netlify.
+Click [here](https://jimmynguyen1308.netlify.com/portfolio) to get to the deployed app on Netlify.
