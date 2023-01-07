@@ -23,7 +23,7 @@ export default function Cover() {
           <Button
             buttonClass="download-resume-btn"
             handleClick={() => {}}
-            text="Download My Resume"
+            text="View Resume"
             icon={<SVGLogo imgClass={"icon-resume"} path={"icon-pdf"} />}
           />
         </a>
